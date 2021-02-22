@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F0EBC3256CE1D7CDE91BD12 /* Pods_SnowPlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16260549A6C24E08687258F /* Pods_SnowPlow.framework */; };
+		845F151821EA207900E7B4E5 /* Style.json in Resources */ = {isa = PBXBuildFile; fileRef = 845F151721EA207900E7B4E5 /* Style.json */; };
+		845F151E21ED5FD200E7B4E5 /* MarkAsCompletedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F151D21ED5FD200E7B4E5 /* MarkAsCompletedViewController.swift */; };
+		8485A46221DCF21F00E67EDF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8485A46121DCF21F00E67EDF /* MapKit.framework */; };
+		848ED36221C1742700BEE124 /* SelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED36121C1742700BEE124 /* SelectorViewController.swift */; };
+		848ED36621C1A2CB00BEE124 /* PlowMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED36521C1A2CB00BEE124 /* PlowMapViewController.swift */; };
+		848ED37221C1ED3400BEE124 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED37121C1ED3400BEE124 /* LogInViewController.swift */; };
+		848ED37421C209C000BEE124 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848ED37321C209C000BEE124 /* Extensions.swift */; };
+		84BD40D921EE5F8B00F9D670 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD40D821EE5F8B00F9D670 /* Global.swift */; };
+		84C0A87321C2CFA20002F47C /* Flags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0A87221C2CFA20002F47C /* Flags.swift */; };
+		84CB486721E4F20700B4A12C /* GPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB486621E4F20700B4A12C /* GPS.swift */; };
+		84F1449B21C15FA90032DD4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1449A21C15FA90032DD4F /* AppDelegate.swift */; };
+		84F144A021C15FA90032DD4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F1449E21C15FA90032DD4F /* Main.storyboard */; };
+		84F144A221C15FAB0032DD4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F144A121C15FAB0032DD4F /* Assets.xcassets */; };
+		84F144A521C15FAB0032DD4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F144A321C15FAB0032DD4F /* LaunchScreen.storyboard */; };
+		FCD549242209D0AE002BD66A /* PlowSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD549232209D0AE002BD66A /* PlowSettingsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		845F151721EA207900E7B4E5 /* Style.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Style.json; sourceTree = "<group>"; };
+		845F151D21ED5FD200E7B4E5 /* MarkAsCompletedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkAsCompletedViewController.swift; sourceTree = "<group>"; };
+		8485A46121DCF21F00E67EDF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		848ED36121C1742700BEE124 /* SelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorViewController.swift; sourceTree = "<group>"; };
+		848ED36521C1A2CB00BEE124 /* PlowMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlowMapViewController.swift; sourceTree = "<group>"; };
+		848ED37121C1ED3400BEE124 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		848ED37321C209C000BEE124 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		84BD40D821EE5F8B00F9D670 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		84C0A87221C2CFA20002F47C /* Flags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flags.swift; sourceTree = "<group>"; };
+		84CB486621E4F20700B4A12C /* GPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPS.swift; sourceTree = "<group>"; };
+		84F1449721C15FA90032DD4F /* SnowPlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnowPlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F1449A21C15FA90032DD4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84F1449F21C15FA90032DD4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84F144A121C15FAB0032DD4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = SnowPlow/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		84F144A421C15FAB0032DD4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84F144A621C15FAB0032DD4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B16260549A6C24E08687258F /* Pods_SnowPlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnowPlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3C4685F3E8E54A2E881434C /* Pods-SnowPlow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnowPlow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnowPlow/Pods-SnowPlow.debug.xcconfig"; sourceTree = "<group>"; };
+		F01A836A647BF90270964001 /* Pods-SnowPlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnowPlow.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnowPlow/Pods-SnowPlow.release.xcconfig"; sourceTree = "<group>"; };
+		FCD549232209D0AE002BD66A /* PlowSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlowSettingsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84F1449421C15FA90032DD4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8485A46221DCF21F00E67EDF /* MapKit.framework in Frameworks */,
+				7F0EBC3256CE1D7CDE91BD12 /* Pods_SnowPlow.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		260905AF9DAC191A942FBA13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8485A46121DCF21F00E67EDF /* MapKit.framework */,
+				B16260549A6C24E08687258F /* Pods_SnowPlow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84F1448E21C15FA90032DD4F = {
+			isa = PBXGroup;
+			children = (
+				84F1449921C15FA90032DD4F /* SnowPlow */,
+				84F1449821C15FA90032DD4F /* Products */,
+				BA37BBC942467E1C07DB6241 /* Pods */,
+				260905AF9DAC191A942FBA13 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84F1449821C15FA90032DD4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84F1449721C15FA90032DD4F /* SnowPlow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84F1449921C15FA90032DD4F /* SnowPlow */ = {
+			isa = PBXGroup;
+			children = (
+				845F151721EA207900E7B4E5 /* Style.json */,
+				84F1449A21C15FA90032DD4F /* AppDelegate.swift */,
+				84C0A87221C2CFA20002F47C /* Flags.swift */,
+				84CB486621E4F20700B4A12C /* GPS.swift */,
+				84F1449E21C15FA90032DD4F /* Main.storyboard */,
+				FCD549232209D0AE002BD66A /* PlowSettingsViewController.swift */,
+				84BD40D821EE5F8B00F9D670 /* Global.swift */,
+				845F151D21ED5FD200E7B4E5 /* MarkAsCompletedViewController.swift */,
+				848ED37121C1ED3400BEE124 /* LogInViewController.swift */,
+				848ED36121C1742700BEE124 /* SelectorViewController.swift */,
+				848ED37321C209C000BEE124 /* Extensions.swift */,
+				848ED36521C1A2CB00BEE124 /* PlowMapViewController.swift */,
+				84F144A121C15FAB0032DD4F /* Assets.xcassets */,
+				84F144A321C15FAB0032DD4F /* LaunchScreen.storyboard */,
+				84F144A621C15FAB0032DD4F /* Info.plist */,
+			);
+			path = SnowPlow;
+			sourceTree = "<group>";
+		};
+		BA37BBC942467E1C07DB6241 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3C4685F3E8E54A2E881434C /* Pods-SnowPlow.debug.xcconfig */,
+				F01A836A647BF90270964001 /* Pods-SnowPlow.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84F1449621C15FA90032DD4F /* SnowPlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F144A921C15FAB0032DD4F /* Build configuration list for PBXNativeTarget "SnowPlow" */;
+			buildPhases = (
+				03AD2B79A418582CCC2879F1 /* [CP] Check Pods Manifest.lock */,
+				84F1449321C15FA90032DD4F /* Sources */,
+				84F1449421C15FA90032DD4F /* Frameworks */,
+				84F1449521C15FA90032DD4F /* Resources */,
+				6972D89172E7AFACA09AD423 /* [CP] Embed Pods Frameworks */,
+				A1C34B9A2C5F753E250BE70A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnowPlow;
+			productName = SnowPlow;
+			productReference = 84F1449721C15FA90032DD4F /* SnowPlow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84F1448F21C15FA90032DD4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Baraty Hannibal Enterprises";
+				TargetAttributes = {
+					84F1449621C15FA90032DD4F = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 84F1449221C15FA90032DD4F /* Build configuration list for PBXProject "SnowPlow" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84F1448E21C15FA90032DD4F;
+			productRefGroup = 84F1449821C15FA90032DD4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84F1449621C15FA90032DD4F /* SnowPlow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84F1449521C15FA90032DD4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F144A521C15FAB0032DD4F /* LaunchScreen.storyboard in Resources */,
+				84F144A221C15FAB0032DD4F /* Assets.xcassets in Resources */,
+				84F144A021C15FA90032DD4F /* Main.storyboard in Resources */,
+				845F151821EA207900E7B4E5 /* Style.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03AD2B79A418582CCC2879F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SnowPlow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6972D89172E7AFACA09AD423 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnowPlow/Pods-SnowPlow-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SnowPlow/Pods-SnowPlow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1C34B9A2C5F753E250BE70A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnowPlow/Pods-SnowPlow-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SnowPlow/Pods-SnowPlow-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84F1449321C15FA90032DD4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CB486721E4F20700B4A12C /* GPS.swift in Sources */,
+				848ED36221C1742700BEE124 /* SelectorViewController.swift in Sources */,
+				848ED37221C1ED3400BEE124 /* LogInViewController.swift in Sources */,
+				84F1449B21C15FA90032DD4F /* AppDelegate.swift in Sources */,
+				848ED36621C1A2CB00BEE124 /* PlowMapViewController.swift in Sources */,
+				FCD549242209D0AE002BD66A /* PlowSettingsViewController.swift in Sources */,
+				84BD40D921EE5F8B00F9D670 /* Global.swift in Sources */,
+				848ED37421C209C000BEE124 /* Extensions.swift in Sources */,
+				845F151E21ED5FD200E7B4E5 /* MarkAsCompletedViewController.swift in Sources */,
+				84C0A87321C2CFA20002F47C /* Flags.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84F1449E21C15FA90032DD4F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F1449F21C15FA90032DD4F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84F144A321C15FAB0032DD4F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F144A421C15FAB0032DD4F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84F144A721C15FAB0032DD4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84F144A821C15FAB0032DD4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84F144AA21C15FAB0032DD4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3C4685F3E8E54A2E881434C /* Pods-SnowPlow.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZC9MRDJVS6;
+				INFOPLIST_FILE = SnowPlow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hannibal.nixPlow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		84F144AB21C15FAB0032DD4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F01A836A647BF90270964001 /* Pods-SnowPlow.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZC9MRDJVS6;
+				INFOPLIST_FILE = SnowPlow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hannibal.nixPlow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84F1449221C15FA90032DD4F /* Build configuration list for PBXProject "SnowPlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F144A721C15FAB0032DD4F /* Debug */,
+				84F144A821C15FAB0032DD4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F144A921C15FAB0032DD4F /* Build configuration list for PBXNativeTarget "SnowPlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F144AA21C15FAB0032DD4F /* Debug */,
+				84F144AB21C15FAB0032DD4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84F1448F21C15FA90032DD4F /* Project object */;
+}

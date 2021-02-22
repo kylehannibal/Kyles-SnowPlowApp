@@ -1,5 +1,5 @@
 # Snow Plow App
-### By Michael Baraty and Kyle Hannibal
+### By Kyle Hannibal
 #### Open in XCode 10.1
 
 Breakdown:
